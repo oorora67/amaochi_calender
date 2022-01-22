@@ -5,7 +5,7 @@
 .container {
     width: 100%;
     height: 100vh;
-    background-color: #15151e;
+    background-color: #F9e5e5;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -15,8 +15,10 @@
 /* 時計の共通スタイル */
 .clock {
     font-family: 'Share Tech Mono', monospace;
-    color: #daf6ff;
-    text-shadow: 0 0 20px #0aafe6;
+    /*color: #daf6ff;
+    text-shadow: 0 0 20px #0aafe6;*/
+    color: #ff0000;
+    text-shadow: 0 0 20px #ff3535;
     line-height: 1.2;
     text-align: center;
 }
@@ -32,6 +34,9 @@
 }
 .button-text {
     font-size: 50px;
+}
+.url-text {
+    font-size: 30px;
 }
 /* 文字サイズ調整 */
 @media screen and (max-width: 500px) {

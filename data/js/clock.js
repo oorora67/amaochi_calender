@@ -33,13 +33,15 @@ const clock = () => {
     // 文字列を出力
     document.querySelector(".clock-date").innerText = today;
     document.querySelector(".clock-time").innerText = time;
-    document.querySelector(".button-text").innerText = "SOUND";
   };
   
   // 1秒ごとにclock関数を呼び出す
   setInterval(clock, 1000);
-document.getElementById("button").onclick = async function() {
-    document.querySelector(".button-text").innerText = "Play";
+document.getElementById("button").onclick = function(e) {
+    if(document.querySelector(".button-text").innerText == "PlayNow."){
+        return;
+    };
+    document.querySelector(".button-text").innerText = "PlayNow.";
     let playlist = new Array();
     // 現在の日時・時刻の情報を取得
     const d = new Date();
@@ -378,7 +380,15 @@ document.getElementById("button").onclick = async function() {
     }
     else {
         document.body.removeChild(audio);
+        document.querySelector(".button-text").innerText = "SOUND";
     }
   });
 
 };
+
+document.getElementById("url-button").onclick = async function() {
+    window.location.href = 'https://www.youtube.com/channel/UCrgaidd-K-sjnoz61y52f1Q';
+};
+function myHandler(e){
+    e.preventDefault();
+}
