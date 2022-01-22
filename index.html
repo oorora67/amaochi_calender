@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>あまおち時計</title>
+  <!-- CSSファイル読み込み -->
+  <link rel="stylesheet" href="data/css/style.css">
+  <audio id="baka" preload="auto">
+    <source src="data/sound/amaochi_baka.mp3" type="audio/mp3">
+  </audio>
+  <audio id="baka2" preload="auto">
+    <source src="data/sound/amaochi_baka2.wav" type="audio/wav">
+  </audio>
+</head>
+<body>
+  <div class="container">
+    <div class="clock">
+      <p class="clock-date"></p>
+      <p class="clock-time"></p>
+      <div id="button"><p class="button-text"></p></div>
+    </div>
+  </div>
+  <!-- JavaScriptファイル読み込み -->
+  <script src="data/js/clock.js"></script>
+</body>
+</html>
