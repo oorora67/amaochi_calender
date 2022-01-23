@@ -38,4 +38,13 @@
     .clock-time {
         font-size: 20vw;
     }
+    .button-text {
+        font-size: 10vw;
+    }
+    .url-text {
+        font-size: 6.5vw;
+    }
+    .url-text2 {
+        font-size: 4.5vw;
+    }
 }
