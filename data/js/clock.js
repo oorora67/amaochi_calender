@@ -21,10 +21,10 @@ const clock = () => {
 };
 setInterval(clock, 1000);
 document.getElementById("button").onclick = function(e) {
-    if(document.querySelector(".button-text").innerText == "PlayNow."){
+    if(document.querySelector(".button-text").innerText == "PlayNow"){
         return;
     };
-    document.querySelector(".button-text").innerText = "PlayNow.";
+    document.querySelector(".button-text").innerText = "PlayNow";
     let playlist = new Array();
     const d = new Date();
     let year = d.getFullYear();
