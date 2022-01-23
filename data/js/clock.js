@@ -50,7 +50,6 @@ document.getElementById("button").onclick = function(e) {
             playlist.push('data/sound/10.mp3');
             break;
         default:
-            
     }
     switch(month_s[1]){
         case '0':
@@ -83,7 +82,6 @@ document.getElementById("button").onclick = function(e) {
             playlist.push('data/sound/9.mp3');
             break;
         default:
-            
     }
     playlist.push('data/sound/月.mp3');
     switch(date_s[0]){
@@ -99,7 +97,6 @@ document.getElementById("button").onclick = function(e) {
             playlist.push('data/sound/30.mp3');
             break;
         default:
-            
     }
     switch(date_s[1]){
         case '0':
@@ -132,7 +129,6 @@ document.getElementById("button").onclick = function(e) {
             playlist.push('data/sound/9.mp3');
             break;
         default:
-            
     }
     playlist.push('data/sound/日.mp3');
     switch(day){
@@ -158,7 +154,6 @@ document.getElementById("button").onclick = function(e) {
             playlist.push('data/sound/土曜日.mp3');
             break;
         default:
-            
     }
     let hour_s = String(hour).split('');
     let min_s = String(min).split('');
@@ -173,7 +168,6 @@ document.getElementById("button").onclick = function(e) {
             playlist.push('data/sound/20.mp3');
             break;
         default:
-            
     }
     switch(hour_s[1]){
         case '0':
@@ -230,7 +224,6 @@ document.getElementById("button").onclick = function(e) {
             playlist.push('data/sound/50.mp3');
             break;
         default:
-            
     }
     switch(min_s[1]){
         case '0':
