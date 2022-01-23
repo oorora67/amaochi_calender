@@ -38,6 +38,9 @@
 .url-text {
     font-size: 30px;
 }
+.url-text2 {
+    font-size: 20px;
+}
 /* 文字サイズ調整 */
 @media screen and (max-width: 500px) {
     .clock-date {
