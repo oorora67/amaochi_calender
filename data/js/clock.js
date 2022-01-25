@@ -314,6 +314,7 @@ function convertCSVtoArray(str,date){ // 読み込んだCSVデータが文字列
     for(var i=0;i<tmp.length;++i){
         result = tmp[i].split(',');
         if(result==date){
+            console.log(result)
             return result[1];
         }
         
