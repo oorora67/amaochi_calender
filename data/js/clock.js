@@ -296,7 +296,7 @@ function myHandler(e){
 //CSVファイルを読み込む関数getCSV()の定義
 function getEvent_voice(date){
     var req = new XMLHttpRequest(); // HTTPでファイルを読み込むためのXMLHttpRrequestオブジェクトを生成
-    req.open("get", "/data/js/event_day", true); // アクセスするファイルを指定
+    req.open("get", "/data/js/event_day/", true); // アクセスするファイルを指定
     req.send(null); // HTTPリクエストの発行
 	
     // レスポンスが返ってきたらconvertCSVtoArray()を呼ぶ	
