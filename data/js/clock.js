@@ -305,20 +305,24 @@ function getEvent_voice(date){
     req.send(); // HTTPリクエストの発行
     console.log(date+'3');
     ret=convertCSVtoArray(req.responseText,date);
+    console.log(date+'4');
     return ret;
 
 }
  
 // 読み込んだCSVデータを二次元配列に変換する関数convertCSVtoArray()の定義
 function convertCSVtoArray(str,date){ // 読み込んだCSVデータが文字列として渡される
+    console.log(date+'5');
     var result = []; // 最終的な二次元配列を入れるための配列
     var tmp = str.split("\r\n"); // 改行を区切り文字として行を要素とした配列を生成
     let ret = 'data/sound/blank.mp3';
     // 各行ごとにカンマで区切った文字列を要素とした二次元配列を生成
     for(var i=0;i<tmp.length;++i){
+        console.log(date+'6');
         result = tmp[i].split(',');
         if(result[0]==date){
             ret = result[1];
+            console.log(date+'7');
         }
     }
     return ret;
