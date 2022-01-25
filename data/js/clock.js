@@ -300,6 +300,7 @@ function getEvent_voice(date){
     console.log('result');
     var req = new XMLHttpRequest(); // HTTPでファイルを読み込むためのXMLHttpRrequestオブジェクトを生成
     req.open("get", "data/js/event_day", false); // アクセスするファイルを指定
+    console.log(req)
     req.send(null); // HTTPリクエストの発行
 	
     // レスポンスが返ってきたらconvertCSVtoArray()を呼ぶ	
