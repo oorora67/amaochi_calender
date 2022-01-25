@@ -299,13 +299,14 @@ function myHandler(e){
 function getEvent_voice(date){
     console.log('result');
     var req = new XMLHttpRequest(); // HTTPでファイルを読み込むためのXMLHttpRrequestオブジェクトを生成
-    req.open("get", "/data/js/event_day", true); // アクセスするファイルを指定
+    req.open("get", "/data/js/event_day", false); // アクセスするファイルを指定
     req.send(null); // HTTPリクエストの発行
 	
     // レスポンスが返ってきたらconvertCSVtoArray()を呼ぶ	
     req.onload = function(){
+        console.log('aaaaa');
         console.log(req.responseText);
-	return convertCSVtoArray(req.responseText,date); // 渡されるのは読み込んだCSVデータ
+	    return convertCSVtoArray(req.responseText,date); // 渡されるのは読み込んだCSVデータ
     }
 }
  
