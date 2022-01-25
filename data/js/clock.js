@@ -299,9 +299,11 @@ function myHandler(e){
 function getEvent_voice(date){
     let ret = 'data/sound/blank.mp3';
     var req = new XMLHttpRequest(); // HTTPでファイルを読み込むためのXMLHttpRrequestオブジェクトを生成
+    console.log(date);
     req.open("GET", "data/js/event_day.csv", false); // アクセスするファイルを指定
+    console.log(date);
     req.send(); // HTTPリクエストの発行
-    console.log(req.responseText);
+    console.log(date);
     ret=convertCSVtoArray(req.responseText,date);
     return ret;
 
