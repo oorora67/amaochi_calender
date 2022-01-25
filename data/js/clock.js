@@ -262,6 +262,7 @@ document.getElementById("button").onclick = function(e) {
     }
     playlist.push('data/sound/etc/分.mp3');
     playlist.push(getEvent_voice(date));
+    console.log(playlist)
     var audio = document.createElement('audio');
     document.body.appendChild(audio);
     audio.style.width = '100%';
