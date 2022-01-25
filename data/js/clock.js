@@ -314,13 +314,13 @@ function getEvent_voice(date){
 function convertCSVtoArray(str,date){ // 読み込んだCSVデータが文字列として渡される
     console.log(date+'5');
     var result = []; // 最終的な二次元配列を入れるための配列
-    var tmp = str.split("\n"); // 改行を区切り文字として行を要素とした配列を生成
+    var tmp = str.toString().split("\n"); // 改行を区切り文字として行を要素とした配列を生成
     console.log(tmp);
     let ret = 'data/sound/blank.mp3';
     // 各行ごとにカンマで区切った文字列を要素とした二次元配列を生成
     for(var i=0;i<tmp.length;++i){
         console.log(date+'6');
-        result = tmp[i].split(',');
+        result = tmp[i].toString().split(',');
         console.log(result);
         if(result[0]==date){
             ret = result[1];
