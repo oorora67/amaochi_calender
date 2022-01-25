@@ -47,7 +47,7 @@ document.getElementById("button").onclick = function(e) {
         case '0':
             break;
         case '1':
-            playlist.push('data/sound/10.mp3');
+            playlist.push('data/sound/number/10.mp3');
             break;
         default:
     }
@@ -55,46 +55,46 @@ document.getElementById("button").onclick = function(e) {
         case '0':
             break;
         case '1':
-            playlist.push('data/sound/1.mp3');
+            playlist.push('data/sound/number/1.mp3');
             break;
         case '2':
-            playlist.push('data/sound/2.mp3');
+            playlist.push('data/sound/number/2.mp3');
             break;
         case '3':
-            playlist.push('data/sound/3.mp3');
+            playlist.push('data/sound/number/3.mp3');
             break;
         case '4':
-            playlist.push('data/sound/4.mp3');
+            playlist.push('data/sound/number/4.mp3');
             break;
         case '5':
-            playlist.push('data/sound/5.mp3');
+            playlist.push('data/sound/number/5.mp3');
             break;
         case '6':
-            playlist.push('data/sound/6.mp3');
+            playlist.push('data/sound/number/6.mp3');
             break;
         case '7':
-            playlist.push('data/sound/7.mp3');
+            playlist.push('data/sound/number/7.mp3');
             break;
         case '8':
-            playlist.push('data/sound/8.mp3');
+            playlist.push('data/sound/number/8.mp3');
             break;
         case '9':
-            playlist.push('data/sound/9.mp3');
+            playlist.push('data/sound/number/9.mp3');
             break;
         default:
     }
-    playlist.push('data/sound/月.mp3');
+    playlist.push('data/sound/etc/月.mp3');
     switch(date_s[0]){
         case '0':
             break;
         case '1':
-            playlist.push('data/sound/10.mp3');
+            playlist.push('data/sound/number/10.mp3');
             break;
         case '2':
-            playlist.push('data/sound/20.mp3');
+            playlist.push('data/sound/number/20.mp3');
             break;
         case '3':
-            playlist.push('data/sound/30.mp3');
+            playlist.push('data/sound/number/30.mp3');
             break;
         default:
     }
@@ -102,56 +102,56 @@ document.getElementById("button").onclick = function(e) {
         case '0':
             break;
         case '1':
-            playlist.push('data/sound/1.mp3');
+            playlist.push('data/sound/number/1.mp3');
             break;
         case '2':
-            playlist.push('data/sound/2.mp3');
+            playlist.push('data/sound/number/2.mp3');
             break;
         case '3':
-            playlist.push('data/sound/3.mp3');
+            playlist.push('data/sound/number/3.mp3');
             break;
         case '4':
-            playlist.push('data/sound/4.mp3');
+            playlist.push('data/sound/number/4.mp3');
             break;
         case '5':
-            playlist.push('data/sound/5.mp3');
+            playlist.push('data/sound/number/5.mp3');
             break;
         case '6':
-            playlist.push('data/sound/6.mp3');
+            playlist.push('data/sound/number/6.mp3');
             break;
         case '7':
-            playlist.push('data/sound/7.mp3');
+            playlist.push('data/sound/number/7.mp3');
             break;
         case '8':
-            playlist.push('data/sound/8.mp3');
+            playlist.push('data/sound/number/8.mp3');
             break;
         case '9':
-            playlist.push('data/sound/9.mp3');
+            playlist.push('data/sound/number/9.mp3');
             break;
         default:
     }
-    playlist.push('data/sound/日.mp3');
+    playlist.push('data/sound/etc/日.mp3');
     switch(day){
         case 'SUN':
-            playlist.push('data/sound/日曜日.mp3');
+            playlist.push('data/sound/week/日曜日.mp3');
             break;
         case 'MON':
-            playlist.push('data/sound/月曜日.mp3');
+            playlist.push('data/sound/week/月曜日.mp3');
             break;
         case 'TUE':
-            playlist.push('data/sound/火曜日.mp3');
+            playlist.push('data/sound/week/火曜日.mp3');
             break;
         case 'WED':
-            playlist.push('data/sound/水曜日.mp3');
+            playlist.push('data/sound/week/水曜日.mp3');
             break;
         case 'THU':
-            playlist.push('data/sound/木曜日.mp3');
+            playlist.push('data/sound/week/木曜日.mp3');
             break;
         case 'FRI':
-            playlist.push('data/sound/金曜日.mp3');
+            playlist.push('data/sound/week/金曜日.mp3');
             break;
         case 'SAT':
-            playlist.push('data/sound/土曜日.mp3');
+            playlist.push('data/sound/week/土曜日.mp3');
             break;
         default:
     }
@@ -162,105 +162,106 @@ document.getElementById("button").onclick = function(e) {
         case '0':
             break;
         case '1':
-            playlist.push('data/sound/10.mp3');
+            playlist.push('data/sound/number/10.mp3');
             break;
         case '2':
-            playlist.push('data/sound/20.mp3');
+            playlist.push('data/sound/number/20.mp3');
             break;
         default:
     }
     switch(hour_s[1]){
         case '0':
             if(hour_s[0]==0){
-                playlist.push('data/sound/0.mp3');
+                playlist.push('data/sound/number/9.mp3');
             }
             break;
         case '1':
-            playlist.push('data/sound/1.mp3');
+            playlist.push('data/sound/number/1.mp3');
             break;
         case '2':
-            playlist.push('data/sound/2.mp3');
+            playlist.push('data/sound/number/2.mp3');
             break;
         case '3':
-            playlist.push('data/sound/3.mp3');
+            playlist.push('data/sound/number/3.mp3');
             break;
         case '4':
-            playlist.push('data/sound/4.mp3');
+            playlist.push('data/sound/number/4.mp3');
             break;
         case '5':
-            playlist.push('data/sound/5.mp3');
+            playlist.push('data/sound/number/5.mp3');
             break;
         case '6':
-            playlist.push('data/sound/6.mp3');
+            playlist.push('data/sound/number/6.mp3');
             break;
         case '7':
-            playlist.push('data/sound/7.mp3');
+            playlist.push('data/sound/number/7.mp3');
             break;
         case '8':
-            playlist.push('data/sound/8.mp3');
+            playlist.push('data/sound/number/8.mp3');
             break;
         case '9':
-            playlist.push('data/sound/9.mp3');
+            playlist.push('data/sound/number/9.mp3');
             break;
         default:
     }
-    playlist.push('data/sound/時.mp3');
+    playlist.push('data/sound/etc/時.mp3');
     switch(min_s[0]){
         case '0':
             break;
         case '1':
-            playlist.push('data/sound/10.mp3');
+            playlist.push('data/sound/number/10.mp3');
             break;
         case '2':
-            playlist.push('data/sound/20.mp3');
+            playlist.push('data/sound/number/20.mp3');
             break;
         case '3':
-            playlist.push('data/sound/30.mp3');
+            playlist.push('data/sound/number/30.mp3');
             break;
         case '4':
-            playlist.push('data/sound/40.mp3');
+            playlist.push('data/sound/number/40.mp3');
             break;
         case '5':
-            playlist.push('data/sound/50.mp3');
+            playlist.push('data/sound/number/50.mp3');
             break;
         default:
     }
     switch(min_s[1]){
         case '0':
             if(min_s[0]==0){
-                playlist.push('data/sound/0.mp3');
+                playlist.push('data/sound/number/9.mp3');
             }
             break;
         case '1':
-            playlist.push('data/sound/1.mp3');
+            playlist.push('data/sound/number/1.mp3');
             break;
         case '2':
-            playlist.push('data/sound/2.mp3');
+            playlist.push('data/sound/number/2.mp3');
             break;
         case '3':
-            playlist.push('data/sound/3.mp3');
+            playlist.push('data/sound/number/3.mp3');
             break;
         case '4':
-            playlist.push('data/sound/4.mp3');
+            playlist.push('data/sound/number/4.mp3');
             break;
         case '5':
-            playlist.push('data/sound/5.mp3');
+            playlist.push('data/sound/number/5.mp3');
             break;
         case '6':
-            playlist.push('data/sound/6.mp3');
+            playlist.push('data/sound/number/6.mp3');
             break;
         case '7':
-            playlist.push('data/sound/7.mp3');
+            playlist.push('data/sound/number/7.mp3');
             break;
         case '8':
-            playlist.push('data/sound/8.mp3');
+            playlist.push('data/sound/number/8.mp3');
             break;
         case '9':
-            playlist.push('data/sound/9.mp3');
+            playlist.push('data/sound/number/9.mp3');
             break;
         default:
     }
-    playlist.push('data/sound/分.mp3');
+    playlist.push('data/sound/etc/分.mp3');
+    playlist.push(getEvent_voice(date));
     var audio = document.createElement('audio');
     document.body.appendChild(audio);
     audio.style.width = '100%';
@@ -291,4 +292,32 @@ document.getElementById("url-button2").onclick = async function() {
 };
 function myHandler(e){
     e.preventDefault();
+}
+//CSVファイルを読み込む関数getCSV()の定義
+function getEvent_voice(date){
+    var req = new XMLHttpRequest(); // HTTPでファイルを読み込むためのXMLHttpRrequestオブジェクトを生成
+    req.open("get", "data/js/event_day.csv", true); // アクセスするファイルを指定
+    req.send(null); // HTTPリクエストの発行
+	
+    // レスポンスが返ってきたらconvertCSVtoArray()を呼ぶ	
+    req.onload = function(){
+	return convertCSVtoArray(req.responseText,date); // 渡されるのは読み込んだCSVデータ
+    }
+}
+ 
+// 読み込んだCSVデータを二次元配列に変換する関数convertCSVtoArray()の定義
+function convertCSVtoArray(str,date){ // 読み込んだCSVデータが文字列として渡される
+    var result = []; // 最終的な二次元配列を入れるための配列
+    var tmp = str.split("\n"); // 改行を区切り文字として行を要素とした配列を生成
+ 
+    // 各行ごとにカンマで区切った文字列を要素とした二次元配列を生成
+    for(var i=0;i<tmp.length;++i){
+        result = tmp[i].split(',');
+        if(result==date){
+            return result[1];
+        }
+        
+    }
+ 
+    return 'data/sound/blank.mp3'
 }
