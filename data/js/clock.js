@@ -304,7 +304,7 @@ function getEvent_voice(date){
 	
     // レスポンスが返ってきたらconvertCSVtoArray()を呼ぶ	
     req.onload = function(){
-        console.log('result2');
+        console.log(req.responseText);
 	return convertCSVtoArray(req.responseText,date); // 渡されるのは読み込んだCSVデータ
     }
 }
