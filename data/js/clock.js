@@ -261,6 +261,7 @@ document.getElementById("button").onclick = function(e) {
         default:
     }
     playlist.push('data/sound/etc/分.mp3');
+    console.log(playlist)
     playlist.push(getEvent_voice(date));
     console.log(playlist)
     var audio = document.createElement('audio');
