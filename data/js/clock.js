@@ -32,6 +32,7 @@ document.getElementById("button").onclick = function(e) {
     let date = d.getDate();
     let dayNum = d.getDay();
     const weekday = ["SUN", "MON", "TUE", "WED", "THU", "FRI", "SAT"];
+    const random = ['data/sound/etc/random/p1.mp3','data/sound/etc/random/p2.mp3','data/sound/etc/random/p3.mp3'];
     let day = weekday[dayNum];
     let hour = d.getHours();
     let min = d.getMinutes();
@@ -172,7 +173,7 @@ document.getElementById("button").onclick = function(e) {
     switch(hour_s[1]){
         case '0':
             if(hour_s[0]==0){
-                playlist.push('data/sound/number/9.mp3');
+                playlist.push('data/sound/number/0.mp3');
             }
             break;
         case '1':
@@ -228,7 +229,7 @@ document.getElementById("button").onclick = function(e) {
     switch(min_s[1]){
         case '0':
             if(min_s[0]==0){
-                playlist.push('data/sound/number/9.mp3');
+                playlist.push('data/sound/number/0.mp3');
             }
             break;
         case '1':
@@ -261,14 +262,13 @@ document.getElementById("button").onclick = function(e) {
         default:
     }
     playlist.push('data/sound/etc/分.mp3');
-    console.log(playlist)
-    playlist.push(getEvent_voice(date));
-    console.log(playlist)
+    playlist.push(random[Math.floor( Math.random() * random.length ) ]);
+    playlist.push(getEvent_voice(month+date));
     var audio = document.createElement('audio');
     document.body.appendChild(audio);
     audio.style.width = '100%';
     audio.style.height = 'auto';
-    audio.controls = true;
+    audio.controls = false;
     audio.volume = 1.0;
     audio.src = playlist[0];
     audio.play();
@@ -297,37 +297,26 @@ function myHandler(e){
 }
 //CSVファイルを読み込む関数getCSV()の定義
 function getEvent_voice(date){
-    console.log('result');
+    let ret = 'data/sound/blank.mp3';
     var req = new XMLHttpRequest(); // HTTPでファイルを読み込むためのXMLHttpRrequestオブジェクトを生成
-    req.open("get", "data/js/event_day/index.html", false); // アクセスするファイルを指定
-    console.log(req)
-    req.send(null); // HTTPリクエストの発行
-	
-    // レスポンスが返ってきたらconvertCSVtoArray()を呼ぶ	
-    req.onload = function(){
-        console.log('aaaaa');
-        console.log(req.responseText);
-	    return convertCSVtoArray(req.responseText,date); // 渡されるのは読み込んだCSVデータ
-    }
+    req.open("GET", "data/js/event_day.csv", false); // アクセスするファイルを指定
+    req.send(); // HTTPリクエストの発行
+    ret=convertCSVtoArray(req.responseText,date);
+    return ret;
+
 }
  
 // 読み込んだCSVデータを二次元配列に変換する関数convertCSVtoArray()の定義
 function convertCSVtoArray(str,date){ // 読み込んだCSVデータが文字列として渡される
-    console.log('result3');
     var result = []; // 最終的な二次元配列を入れるための配列
-    var tmp = str.split("\n"); // 改行を区切り文字として行を要素とした配列を生成
- 
+    var tmp = str.split("\r\n"); // 改行を区切り文字として行を要素とした配列を生成
+    let ret = 'data/sound/blank.mp3';
     // 各行ごとにカンマで区切った文字列を要素とした二次元配列を生成
     for(var i=0;i<tmp.length;++i){
-        console.log('result4');
         result = tmp[i].split(',');
-        if(result==date){
-            console.log('result5');
-            console.log(result);
-            return result[1];
+        if(result[0]==date){
+            ret = result[1];
         }
-        
     }
- 
-    return 'data/sound/blank.mp3'
+    return ret;
 }
