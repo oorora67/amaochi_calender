@@ -286,10 +286,10 @@ document.getElementById("button").onclick = function(e) {
     });
 };
 
-document.getElementById("url-button").onclick = async function() {
+document.getElementById("url-button").onclick = function() {
     window.location.href = 'https://www.youtube.com/channel/UCrgaidd-K-sjnoz61y52f1Q';
 };
-document.getElementById("url-button2").onclick = async function() {
+document.getElementById("url-button2").onclick = function() {
     window.location.href = 'https://twitter.com/amaochi_003';
 };
 function myHandler(e){
@@ -299,9 +299,11 @@ function myHandler(e){
 function getEvent_voice(date){
     let ret = 'data/sound/blank.mp3';
     var req = new XMLHttpRequest(); // HTTPでファイルを読み込むためのXMLHttpRrequestオブジェクトを生成
+    console.log(date+'1');
     req.open("GET", "data/js/event_day.csv", false); // アクセスするファイルを指定
+    console.log(date+'2');
     req.send(); // HTTPリクエストの発行
-    console.log(req.responseText);
+    console.log(date+'3');
     ret=convertCSVtoArray(req.responseText,date);
     return ret;
 
