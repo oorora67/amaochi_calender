@@ -1,4 +1,6 @@
-@import url("https://fonts.googleapis.com/css2?family=Share+Tech+Mono&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Kaisei+Decol:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fredericka+the+Great&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poiret+One&display=swap');
 * {
     margin: 0px;
     padding: 0px;
@@ -17,9 +19,8 @@
 }
 
 .clock {
-    font-family: 'Share Tech Mono', monospace;
+    font-family: 'Fredericka the Great', cursive;
     color: #ff0000;
-    text-shadow: 0 0 0.3em #ff3535;
     text-align: center;
     margin: 1em 0;
 }
@@ -39,10 +40,12 @@
 .url-text {
     font-size: 0.3em;
     line-height:1.5;
+    font-family: 'Kaisei Decol', serif;
     display: table;
     margin: auto;
 }
 .url-text2 {
+    font-family: 'Poiret One', cursive;
     font-size: 0.2em;
     line-height:1.5;
     display: table;
