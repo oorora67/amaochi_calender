@@ -38,7 +38,7 @@
     margin: auto;
 }
 .url-text {
-    font-size: 0.3em;
+    font-size: 0.35em;
     line-height:1.5;
     font-family: 'Kaisei Decol', serif;
     display: table;
@@ -46,8 +46,8 @@
 }
 .url-text2 {
     font-family: 'Poiret One', cursive;
-    font-size: 0.2em;
-    line-height:1.5;
+    font-size: 0.3em;
+    line-height:2;
     display: table;
     margin: auto;
 }
