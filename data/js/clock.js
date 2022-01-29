@@ -14,7 +14,7 @@ const clock = () => {
     hour = hour < 10 ? "0" + hour : hour;
     min = min < 10 ? "0" + min : min;
     sec = sec < 10 ? "0" + sec : sec;
-    let today = `${year}.${month}.${date} ${day}`;
+    let today = `${year}/${month}/${date} (${day})`;
     let time = `${hour}:${min}:${sec}`;
     document.querySelector(".clock-date").innerText = today;
     document.querySelector(".clock-time").innerText = time;
