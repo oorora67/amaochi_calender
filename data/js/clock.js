@@ -65,7 +65,7 @@ document.getElementById("button").onclick = function(e) {
             playlist.push('data/sound/number/3.mp3');
             break;
         case '4':
-            playlist.push('data/sound/number/4.mp3');
+            playlist.push('data/sound/number/4_0.mp3');
             break;
         case '5':
             playlist.push('data/sound/number/5.mp3');
@@ -112,7 +112,7 @@ document.getElementById("button").onclick = function(e) {
             playlist.push('data/sound/number/3.mp3');
             break;
         case '4':
-            playlist.push('data/sound/number/4.mp3');
+            playlist.push('data/sound/number/4_1.mp3');
             break;
         case '5':
             playlist.push('data/sound/number/5.mp3');
@@ -186,7 +186,7 @@ document.getElementById("button").onclick = function(e) {
             playlist.push('data/sound/number/3.mp3');
             break;
         case '4':
-            playlist.push('data/sound/number/4.mp3');
+            playlist.push('data/sound/number/4_2.mp3');
             break;
         case '5':
             playlist.push('data/sound/number/5.mp3');
@@ -242,7 +242,7 @@ document.getElementById("button").onclick = function(e) {
             playlist.push('data/sound/number/3.mp3');
             break;
         case '4':
-            playlist.push('data/sound/number/4.mp3');
+            playlist.push('data/sound/number/4_1.mp3');
             break;
         case '5':
             playlist.push('data/sound/number/5.mp3');
