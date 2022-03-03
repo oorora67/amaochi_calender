@@ -279,6 +279,7 @@ document.getElementById("button").onclick = function (e) {
         playlist.push(getEvent_voice(month + date));
     };
     var audio = document.createElement('audio');
+    playlist.push('data/sound/blank.mp3');
     document.body.appendChild(audio);
     audio.style.width = '100%';
     audio.style.height = 'auto';
