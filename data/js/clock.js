@@ -313,10 +313,11 @@ function myHandler(e) {
 //CSVファイルを読み込む関数getCSV()の定義
 function getEvent_voice(date) {
     let ret = 'data/sound/blank.mp3';
-    var req = new XMLHttpRequest(); // HTTPでファイルを読み込むためのXMLHttpRrequestオブジェクトを生成
-    req.open("GET", "data/js/event_day.csv", false); // アクセスするファイルを指定
-    req.send(); // HTTPリクエストの発行
-    ret = convertCSVtoArray(req.responseText, date);
+    //var req = new XMLHttpRequest(); // HTTPでファイルを読み込むためのXMLHttpRrequestオブジェクトを生成
+    //req.open("GET", "data/js/event_day.csv", false); // アクセスするファイルを指定
+    //req.send(); // HTTPリクエストの発行
+    req = "0101,data/sound/event/0101.mp3\r\n0214,data/sound/event/0214.mp3\r\n0314,data/sound/event/0314.mp3\r\n0401,data/sound/event/0401.mp3\r\n0707,data/sound/event/0707.mp3\r\n1031,data/sound/event/1031.mp3\r\n1114,data/sound/event/1114.mp3\r\n1205,data/sound/event/1205.mp3\r\n1224,data/sound/event/1224.mp3\r\n1225,data/sound/event/1225.mp3\r\n1231,data/sound/event/1231.mp3\r\n9999,data/sound/event/event1.mp3\r\n";
+    ret = convertCSVtoArray(req, date);
     return ret;
 
 }
